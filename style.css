@@ -1,0 +1,160 @@
+* {
+    font-family: Poppins;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient( #7CB9E8, #F0F8FF);
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #7CB9E8;
+}
+main{
+    background-color: white;
+    padding: 20px ;
+    border: 1px solid #b9b8b8;
+    width:100%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: rgba(118, 180, 215, 0.25) 0px 50px 100px -20px, rgba(0, 51, 102, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+
+
+
+
+/*------------------------Messages--------------------------*/
+
+#messagelist,#joinlist{
+    list-style: none;
+    overflow: auto;
+    max-height: 200px;
+    background-color:  #e8f0fe;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: black;
+    box-shadow: rgba(118, 180, 215, 0.25) 0px 30px 60px -12px inset, rgba(0, 51, 102, 0.3) 0px 18px 36px -18px inset;
+
+   
+}
+#joinlist{
+    max-height: 50px;
+}
+
+.list-item{
+    padding:12px;
+}
+
+.my-message {
+    text-align: right;       
+    margin-left: auto;
+}
+
+.other-message {
+    text-align: left;
+    margin-right: auto; 
+}
+
+
+.username {
+    font-weight: bold;
+    font-size: 11px;
+    color: #318CE7;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.message {
+
+    color: #333; 
+}
+
+/*------------------ inputs tags------------------- */
+
+input {
+width: 100%;
+padding: 10px;
+margin: 5px 0;
+border: 1px solid #333;
+border-radius: 5px;
+transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none; 
+    box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.5);
+}
+
+/* ----------button tags------------------------------- */
+
+
+img{
+    width: 20px;
+    height: 20px;
+    color: #e8f0fe;
+
+}
+
+button{
+    background-image: linear-gradient(to bottom right,  #7CB9E8  , #318CE7);
+    font-weight: bold;
+    color: white;
+    padding:10px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-image: linear-gradient(to bottom right,  #6da0c8  , #1064b7);
+}
+.btn-group{
+    display: flex;
+    justify-content:space-between;
+    margin: 0;
+  
+}
+.btn-group button{
+    flex: 1;
+    margin: 0 2px;
+}
+
+.btn-group #join{
+    margin-left: 0; 
+}
+.btn-group #leave{
+    margin-right: 0;
+}
+
+/*---------------------message group-----------------------*/
+
+.message-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+#send{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #7CB9E8;
+    color: white;
+}
+
+
+
+
