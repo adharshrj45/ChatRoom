@@ -52,7 +52,7 @@
             if (name.value.length > 0 && room.value.length > 0) {
 
                 count++;
-                socket = new WebSocket('ws://localhost:3400')
+                socket = new WebSocket('https://chat-room-one-kappa.vercel.app/')
 
                 socket.onopen = () => {
                     socket.send(JSON.stringify({ type: 'join', name: name.value, room: room.value }))
